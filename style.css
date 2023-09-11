@@ -1,7 +1,7 @@
 .backgrounf-top {
     background-size: 150px;
     width: 100%;
-    height: 170px;
+    height: 400px;
     background-color: aquamarine;
 }
 
@@ -13,7 +13,7 @@
     padding: 5px;
     background-color: white;
     border-radius: 25px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .text-imput{
     background: #c2c5d6;
