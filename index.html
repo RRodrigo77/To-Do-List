@@ -10,23 +10,32 @@
 </head>
 
 <body>
-    <div class="backgrounf-top">
-        <form class="center" onsubmit="return false;" id="taskForm">
-            <div>
-                <h1>Minhas tasks</h1>
+    <div>
+        <form onsubmit="return false;" id="taskForm">
+            <div class="tasked">
+                <div>
+                    <h1>Minhas tasks</h1>
+                </div>
+                <div>
+                    <label for="task" id="task">Task:</label>
+                    <input class="text-input" type="text" id="taskInput" name="Task" placeholder="Adicionar nova Task">
+                    <input class="text-input" type="number" id="timeInput" name="Time" placeholder="Tempo em minutos">
+                    <button type="button" id="submitButton" style="border-radius: 25px">Enviar</button>
+                </div>
             </div>
-            <div>
-                <label for="task" id="task">Task:</label>
-                <input class="text-imput" type="text" id="taskInput" name="Task" placeholder="Adicionar nova Task">
-                <button type="button" style="border-radius: 25px">Enviar</button>
-            </div>
+
         </form>
         <br>
-        <div class="center">
-            <h1>As tarefas inseridas são:</h1>
-            <div class="container">
-                <ul id="listtask">
-                </ul>
+        <div class="tasked2">
+            <div>
+                <div class="container">
+                    <button type="button" id="clearButton" style="border-radius: 25px">Limpar</button>
+                    <!-- Botão para limpar todas as tasks -->
+                    <h1>As tarefas inseridas são:</h1>
+                </div>
+                <div>
+                    <ul class="list" id="listtask"></ul> <!-- Div onde serão listadas novas task -->
+                </div>
             </div>
         </div>
 </body>
